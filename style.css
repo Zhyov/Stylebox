@@ -1,0 +1,249 @@
+* {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #121212;
+}
+
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+#navbar {
+    background-color: #ffffff;
+    height: 12ch;
+    padding: 0 11vw;
+    width: auto;
+    display: flex;
+    align-content: space-between;
+}
+
+#navbar div {
+    margin-top: 1ch;
+}
+
+#navRight {
+    margin-left: auto;
+}
+
+#logo {
+    width: 10ch;
+    height: 10ch;
+}
+
+#searchIcon {
+    width: 3ch;
+    height: 3ch;
+    margin-bottom: 3ch;
+    margin-left: 3ch;
+}
+
+#search {
+    width: 34vw;
+    height: 5ch;
+    margin-left: 2ch;
+    margin-bottom: 2ch;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 3.25ch;
+    padding: 0 0.5vw;
+}
+
+#search:focus {
+    border: 2px solid #3668BC;
+}
+
+#mainContent {
+    background-color: #ffffff;
+    margin-top: 4ch;
+    margin-left: 17vw;
+    padding: 3ch 2vw;
+    height: max-content;
+    width: 38vw;
+    display: block;
+    border-radius: 5px;
+    flex: 0 0 auto;
+}
+
+#header {
+    margin-bottom: 4ch;
+}
+
+#warning {
+    display: flex;
+    margin-bottom: 4ch;
+}
+
+#warning .side {
+    background-color: #df8b25;
+    width: 0.33vw;
+}
+
+#bottom {
+    background-color: #d0d0d0;
+    height: 0.1ch;
+}
+
+#warning .info {
+    background-color: #fdf9f1;
+    padding: 2ch 2vw;
+    height: fit-content;
+    width: 40vw;
+}
+
+#warning .bold {
+    padding-bottom: 1ch;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+}
+
+#leftContent {
+    width: 16vw;
+    height: fit-content;
+    margin: 4ch 0;
+    flex: 0 0 auto;
+    position: fixed;
+    left: 11vw;
+}
+
+#rightContent {
+    width: 18vw;
+    height: fit-content;
+    margin: 4ch 4ch 0 2vw;
+    flex: 0 0 auto;
+}
+
+#rightContent img {
+    border-radius: 5px;
+    width: 18vw;
+}
+
+.emoji {
+    font-family: 'Noto Color Emoji', sans-serif;
+}
+
+.leftContentTitle {
+    margin-bottom: 2ch;
+}
+
+.contentTitle {
+    display: block;
+    margin: 4ch 0;
+}
+
+.title {
+    font-size: 20px;
+    display: flex;
+}
+
+.title .side {
+    background-color: #d0d0d0;
+    width: 0.1vw;
+    height: 4ch;
+}
+
+.title .info {
+    color: #3668BC;
+    margin-left: 1vw;
+    padding-top: 0.66ch;
+}
+
+.info.active {
+    margin-left: 0.9vw;
+    color: #121212;
+}
+
+.side.active {
+    background-color: #3668BC;
+    width: 0.2vw;
+}
+
+.title1, .title2, .title3, .title4 {
+    font-weight: bold;
+}
+
+.old {
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.title1 {
+    font-size: 48px;
+}
+
+.title2 {
+    font-size: 24px;
+}
+
+.title3 {
+    font-size: 20px;
+}
+
+.title4 {
+    font-size: 18px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+sup {
+    font-size: 10px;
+}
+
+a {
+    color: #3668BC;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+    font-size: 16px;
+    height: 5ch;
+    width: fit-content;
+    margin-top: 2.5ch;
+    margin-left: 0.5vw;
+    padding: 0 0.5vw;
+}
+
+select {
+    border: none;
+    font-size: 16px;
+    height: 5ch;
+    margin-left: 0.5vw;
+    padding: 0 0.5vw;
+}
