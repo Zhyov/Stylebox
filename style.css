@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #e0e0e0;
+    background-color: rgba(208, 208, 208, 0.2);
     margin: 0;
 }
 
@@ -25,6 +25,15 @@ body {
     margin-left: auto;
 }
 
+#navRight button {
+    margin-top: 2.5ch;
+    margin-left: 0.5vw;
+}
+
+#navRight select {
+    margin-top: 2ch;
+}
+
 #logo {
     width: 10ch;
     height: 10ch;
@@ -33,21 +42,20 @@ body {
 #searchIcon {
     width: 3ch;
     height: 3ch;
-    margin-bottom: 3ch;
-    margin-left: 3ch;
+    margin-bottom: 3.5ch;
+    margin-left: 2.5ch;
 }
 
 #search {
     width: 34vw;
     height: 5ch;
-    margin-left: 2ch;
-    margin-bottom: 2ch;
+    margin-left: 1.5ch;
     border: none;
     outline: none;
     font-size: 18px;
     border-radius: 5px;
     position: relative;
-    bottom: 3.25ch;
+    bottom: 3.75ch;
     padding: 0 0.5vw;
 }
 
@@ -58,17 +66,15 @@ body {
 #mainContent {
     background-color: #ffffff;
     margin-top: 4ch;
+    margin-bottom: 4ch;
     margin-left: 17vw;
-    padding: 3ch 2vw;
+    padding: 0 2vw;
+    padding-bottom: 2ch;
     height: max-content;
     width: 38vw;
     display: block;
     border-radius: 5px;
     flex: 0 0 auto;
-}
-
-#header {
-    margin-bottom: 4ch;
 }
 
 #warning {
@@ -77,24 +83,24 @@ body {
 }
 
 #warning .side {
-    background-color: #df8b25;
+    background-color: rgb(223, 139, 37);
     width: 0.33vw;
 }
 
-#bottom {
-    background-color: #d0d0d0;
-    height: 0.1ch;
-}
-
 #warning .info {
-    background-color: #fdf9f1;
-    padding: 2ch 2vw;
+    background-color: rgba(223, 139, 37, 0.05);
+    padding: 1.5ch 1.5vw;
     height: fit-content;
-    width: 40vw;
+    width: fit-content;
 }
 
 #warning .bold {
     padding-bottom: 1ch;
+}
+
+#bottom {
+    background-color: rgba(208, 208, 208, 0.6);
+    height: 0.1ch;
 }
 
 #page {
@@ -123,6 +129,42 @@ body {
     width: 18vw;
 }
 
+.citation {
+    margin: 1.5ch 0;
+}
+
+.number {
+    position: absolute;
+    color: #3668BC;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.citationInfo {
+    margin-left: 1.5vw;
+    font-size: 14px;
+}
+
+.callout {
+    margin: 2ch 0;
+}
+
+.callout .info {
+    border-radius: 5px;
+    background-color: rgba(208, 208, 208, 0.2);
+    padding: 1.5ch 1.5vw;
+    height: fit-content;
+    width: fit-content;
+}
+
+.callout .bold {
+    padding-bottom: 1ch;
+}
+
+.article {
+    text-decoration: none;
+}
+
 .emoji {
     font-family: 'Noto Color Emoji', sans-serif;
 }
@@ -133,7 +175,14 @@ body {
 
 .contentTitle {
     display: block;
-    margin: 4ch 0;
+    margin-top: 4ch;
+    margin-bottom: 2ch;
+}
+
+.contentTitle .info {
+    font-size: 14px;
+    font-style: italic;
+    color: #717171;
 }
 
 .title {
@@ -151,6 +200,8 @@ body {
     color: #3668BC;
     margin-left: 1vw;
     padding-top: 0.66ch;
+    font-weight: 350;
+    font-size: 16px;
 }
 
 .info.active {
@@ -163,8 +214,16 @@ body {
     width: 0.2vw;
 }
 
-.title1, .title2, .title3, .title4 {
-    font-weight: bold;
+.header {
+    margin-bottom: 4ch;
+}
+
+.title1, .title2 {
+    font-weight: 650;
+}
+
+.title3, .title4 {
+    font-weight: 600;
 }
 
 .old {
@@ -192,7 +251,7 @@ body {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .italic {
@@ -200,7 +259,7 @@ body {
 }
 
 .bold-italic {
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
 }
 
@@ -217,7 +276,7 @@ body {
 }
 
 sup {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 a {
@@ -235,8 +294,6 @@ button {
     font-size: 16px;
     height: 5ch;
     width: fit-content;
-    margin-top: 2.5ch;
-    margin-left: 0.5vw;
     padding: 0 0.5vw;
 }
 
@@ -246,4 +303,91 @@ select {
     height: 5ch;
     margin-left: 0.5vw;
     padding: 0 0.5vw;
+}
+
+@media (max-width: 1100px) {
+    #leftContent {
+        display: none;
+    }
+
+    #rightContent {
+        width: 22vw;
+    }
+
+    #rightContent img {
+        width: 22vw;
+    }
+
+    #mainContent {
+        width: 46vw;
+        margin-left: 6vw;
+    }
+
+    #search {
+        width: 37vw;
+    }
+
+    #navbar {
+        padding: 0 3vw;
+    }
+
+    #navRight select {
+        margin-right: 7vw;
+    }
+
+    .citationInfo {
+        margin-left: 2.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #navRight select {
+        margin-right: 9vw;
+    }
+}
+
+@media (max-width: 950px) {
+    #search {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #rightContent {
+        width: 28vw;
+    }
+
+    #rightContent img {
+        width: 28vw;
+    }
+
+    #mainContent {
+        width: 50vw;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #navRight select {
+        margin-right: 3vw;
+    }
+
+    .citationInfo {
+        margin-left: 3.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #navRight button {
+        display: none;
+    }
+
+    #navRight select {
+        margin-right: 5vw;
+    }
+
+    .citationInfo {
+        margin-left: 4.5vw;
+    }
 }
