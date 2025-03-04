@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="Overview">
+    <div id="enlarge" class="closed">
+        <button id="closeButton"><img src="icon/close.svg" alt="close" id="close"></button>
+        <div class="contentBox">
+            <img id="enlarged" alt="enlarged" src="">
+            <p class="info">placeholder</p>
+        </div>
+    </div>
     <div id="navbar">
         <div id="navLeft">
             <img src="img/logo.svg" alt="logo" id="logo">
@@ -17,8 +24,8 @@
             <input type="text" placeholder="Learn about anything you can imagine..." id="search">
         </div>
         <div id="navRight">
-            <button>Create Account</button>
-            <button>Log In</button>
+            <a href="#">Create Account</a>
+            <a href="#">Log In</a>
             <select class="emoji">
                 <option class="emoji">🇬🇧 English</option>
                 <option class="emoji">🇪🇸 Spanish</option>
@@ -113,7 +120,9 @@
                 <div class="rightContentTitle">
                     <p class="title2 old" id="Philosophies">Philosophies</p>
                 </div>
-                <a href="#" class="option"><img src="icon/edit.svg" alt="edit" class="icon"> Edit</a>
+                <div class="leftContentTitle">
+                    <a href="#" class="option"><img src="icon/edit.svg" alt="edit" class="icon"> Edit</a>
+                </div>
             </div>
             <div class="contentBox">
                 People who produce designs are called <a href="#">designers</a>. The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a <a href="#">fashion designer</a>, a <a href="#">product designer</a>, a <a href="#">web designer</a>, or an <a href="#">interior designer</a>), but it can also designate others such as architects and engineers (see below: Types of designing). 
@@ -157,13 +166,29 @@
         </div>
         <div id="rightContent">
             <div class="container" id="image1">
-                <img src="https://s3-alpha-sig.figma.com/img/9c5f/c785/82a9b91d788c95dc4beb93067f8e1d7f?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KLh3LhZtiqekRkbhwjhZb1K4mgZI5eLqLMqwQk8mGSAvVxY0nwDK~g1yw1H3DwtNNUcxpOhHGgIFpOmDMKzcAjJEnsDl97UFwNMPZpTtQJJaYbrb2P~rVOAKp~lWEPx7yZB6suEGVXVzNr1YDFHqilNY3nweDU1q~zSmUTgnfNy-nOEu0slIRjrOC4ddb~BayE1qlZEaZAJ16ocWbRzYZanj9ZcXSkCcR0XEAl-TAEp1bL5CDuXYDQjyn84bC08igeDwZFeLfKSLeZnOUZpc2-hwvBiDNyusgNVOEvuQIZKgHarcexo21I6rGQN1bxKkwz6w7pN1Mhvw4TCXNyhc8w__" alt="placeholder1">
+                <a href="#" class="enlarge">
+                    <img src="https://s3-alpha-sig.figma.com/img/9c5f/c785/82a9b91d788c95dc4beb93067f8e1d7f?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KLh3LhZtiqekRkbhwjhZb1K4mgZI5eLqLMqwQk8mGSAvVxY0nwDK~g1yw1H3DwtNNUcxpOhHGgIFpOmDMKzcAjJEnsDl97UFwNMPZpTtQJJaYbrb2P~rVOAKp~lWEPx7yZB6suEGVXVzNr1YDFHqilNY3nweDU1q~zSmUTgnfNy-nOEu0slIRjrOC4ddb~BayE1qlZEaZAJ16ocWbRzYZanj9ZcXSkCcR0XEAl-TAEp1bL5CDuXYDQjyn84bC08igeDwZFeLfKSLeZnOUZpc2-hwvBiDNyusgNVOEvuQIZKgHarcexo21I6rGQN1bxKkwz6w7pN1Mhvw4TCXNyhc8w__" alt="placeholder1">
+                </a>
                 <p class="info"><a href="#">Cutlery</a> designed by architect and designer <a href="#">Zaha Hadid</a> (2007). The slightly oblique end part of the fork and the spoons, as well as the knife handle, are examples of designing for both aesthetic form and practical function.</p>
             </div>
             <div class="container" id="image2">
-                <img src="https://s3-alpha-sig.figma.com/img/cd6f/9170/dcdda4f14e84b34af51f7513d2d130b1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UoKG0mPJEXAJXRzUqPSnxXswQ1s9~Uzhjk9iwJGzpZYdTFb~O05yt75xXQLv3UpEkIu3OX6W5McvWjpkL1seEgtVxGLwz7jWyKlNOmc3~W3tv9LAMyCuz6yhoDFEM8v-ABNYuWVLFgno-bkLffajqDvRUZhE4bI7oomcNDENAMcmXPSR7VRyKeDORytct3JEcQSTgkRzKITDpRv8uHm08mjoa1fNt1a2R-RHA1yHCG99BfDvnMrU1ruR8lcrtwoxSTvbx9CetPwJaSHsBn22DYqJuQQfsrvpHFPdunYnzvoSLg8WYrmVedKTfBf1yFb4kbBakUEOMmdVVp6Uk-3Pmw__" alt="placeholder2">
+                <a href="#" class="enlarge">
+                    <img src="https://s3-alpha-sig.figma.com/img/cd6f/9170/dcdda4f14e84b34af51f7513d2d130b1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UoKG0mPJEXAJXRzUqPSnxXswQ1s9~Uzhjk9iwJGzpZYdTFb~O05yt75xXQLv3UpEkIu3OX6W5McvWjpkL1seEgtVxGLwz7jWyKlNOmc3~W3tv9LAMyCuz6yhoDFEM8v-ABNYuWVLFgno-bkLffajqDvRUZhE4bI7oomcNDENAMcmXPSR7VRyKeDORytct3JEcQSTgkRzKITDpRv8uHm08mjoa1fNt1a2R-RHA1yHCG99BfDvnMrU1ruR8lcrtwoxSTvbx9CetPwJaSHsBn22DYqJuQQfsrvpHFPdunYnzvoSLg8WYrmVedKTfBf1yFb4kbBakUEOMmdVVp6Uk-3Pmw__" alt="placeholder2">
+                </a>
                 <p class="info">Wireframe render of a complex 3D model representing a bathing robe.</p>
             </div>
+        </div>
+    </div>
+    <div id="footer" class="small">
+        <div id="leftFooter">
+            <p class="small">Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>; additional terms may apply. By using this site, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+            <div id="footerList">
+                <a href="#">Privacy policy</a>
+                <a href="https://github.com/Zhyov/Stylebox">GitHub</a>
+            </div>
+        </div>
+        <div id="rightFooter">
+            <a href="https://github.com/Zhyov/Stylebox"><img src="icon/powered.svg" id="powered"></a>
         </div>
     </div>
 <script src="layout.js"></script>
