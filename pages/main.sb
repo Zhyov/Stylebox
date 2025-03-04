@@ -3,7 +3,7 @@
 
 [warn]{
     | header: This article possibly contains original research.
-    | info: Please [improve it](link) by verifying the claims made and adding [inline citations](link). Statements consisting only of original research should be removed.
+    | info: Please [improve it](link) by [link]{|text:veryfing |link:link} the claims made and adding [inline citations](link). Statements consisting only of original research should be removed.
 }
 
 A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process or the result of that plan or specification in the form of a [prototype](link), product, or [process](link).

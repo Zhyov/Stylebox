@@ -15,6 +15,7 @@ body {
     width: auto;
     display: flex;
     align-content: space-between;
+    border-bottom: rgba(208, 208, 208, 0.6) solid 0.1ch;
 }
 
 #navbar div {
@@ -66,8 +67,8 @@ body {
 #mainContent {
     background-color: #ffffff;
     margin-top: 4ch;
-    margin-bottom: 4ch;
-    margin-left: 17vw;
+    margin-bottom: 70ch;
+    margin-left: 4vw;
     padding: 0 2vw;
     padding-bottom: 2ch;
     height: max-content;
@@ -78,29 +79,16 @@ body {
 }
 
 #warning {
-    display: flex;
-    margin-bottom: 4ch;
-}
-
-#warning .side {
-    background-color: rgb(223, 139, 37);
-    width: 0.33vw;
-}
-
-#warning .info {
-    background-color: rgba(223, 139, 37, 0.05);
+    border-left: #f28500 solid 0.33vw;
+    background-color: rgba(242, 133, 0, 0.05);
     padding: 1.5ch 1.5vw;
     height: fit-content;
     width: fit-content;
+    margin-bottom: 4ch;
 }
 
 #warning .bold {
     padding-bottom: 1ch;
-}
-
-#bottom {
-    background-color: rgba(208, 208, 208, 0.6);
-    height: 0.1ch;
 }
 
 #page {
@@ -109,24 +97,27 @@ body {
 }
 
 #leftContent {
-    width: 16vw;
+    width: 14vw;
     height: fit-content;
     margin: 4ch 0;
     flex: 0 0 auto;
-    position: fixed;
+    position: sticky;
+    top: 4ch;
     left: 11vw;
 }
 
 #rightContent {
     width: 18vw;
-    height: fit-content;
+    height: max-content;
     margin: 4ch 4ch 0 2vw;
     flex: 0 0 auto;
 }
 
-#rightContent img {
-    border-radius: 5px;
-    width: 18vw;
+.icon {
+    position: relative;
+    width: 14px;
+    top: 0.225ch;
+    right: 0.2vw;
 }
 
 .citation {
@@ -170,13 +161,47 @@ body {
 }
 
 .leftContentTitle {
-    margin-bottom: 2ch;
+    margin-top: 1ch;
+    display: flex;
+    justify-content: left;
+}
+
+.header .leftContentTitle {
+    margin-top: 4ch;
+}
+
+.option {
+    text-decoration: none;
+    margin-left: 2vw;
+    border-radius: 5px;
+    padding: 1ch 0.5vw;
+    height: fit-content;
+}
+
+.option:hover {
+    border: #3668BC solid 0.1vw;
+}
+
+.container {
+    position: absolute;
+    width: 18vw;
+    top: 0;
+}
+
+.container img {
+    width: 18vw;
+    border-radius: 5px;
 }
 
 .contentTitle {
-    display: block;
+    display: flex;
     margin-top: 4ch;
     margin-bottom: 2ch;
+    justify-content: space-between;
+}
+
+.contentTitle.header {
+    margin-top: 2ch;
 }
 
 .contentTitle .info {
@@ -186,32 +211,24 @@ body {
 }
 
 .title {
-    font-size: 20px;
-    display: flex;
-}
-
-.title .side {
-    background-color: #d0d0d0;
-    width: 0.1vw;
-    height: 4ch;
-}
-
-.title .info {
+    display: block;
+    text-decoration: none;
     color: #3668BC;
-    margin-left: 1vw;
-    padding-top: 0.66ch;
+    padding: 1ch 0;
+    padding-left: 1vw;
     font-weight: 350;
     font-size: 16px;
+    border-left: #d0d0d0 solid 0.1vw;
 }
 
-.info.active {
-    margin-left: 0.9vw;
+.title:hover {
+    text-decoration: underline;
+}
+
+.title.active {
     color: #121212;
-}
-
-.side.active {
-    background-color: #3668BC;
-    width: 0.2vw;
+    border-left: #3668BC solid 0.15vw;
+    padding-left: 0.9vw;
 }
 
 .header {
@@ -315,21 +332,21 @@ select {
         width: 22vw;
     }
 
-    #rightContent img {
-        width: 22vw;
-    }
-
     #mainContent {
         width: 46vw;
         margin-left: 6vw;
     }
 
     #search {
-        width: 37vw;
+        width: 26vw;
     }
 
     #navbar {
         padding: 0 3vw;
+    }
+
+    #navLeft {
+        margin-left: 10vw;
     }
 
     #navRight select {
@@ -339,11 +356,13 @@ select {
     .citationInfo {
         margin-left: 2.5vw;
     }
-}
 
-@media (max-width: 800px) {
-    #navRight select {
-        margin-right: 9vw;
+    .container {
+        width: 22vw;
+    }
+
+    .container img {
+        width: 22vw;
     }
 }
 
@@ -351,14 +370,24 @@ select {
     #search {
         width: 20vw;
     }
+
+    .leftContentTitle {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    #search {
+        width: 10vw;
+    }
+
+    #navRight select {
+        margin-right: 9vw;
+    }
 }
 
 @media (max-width: 700px) {
     #rightContent {
-        width: 28vw;
-    }
-
-    #rightContent img {
         width: 28vw;
     }
 
@@ -370,12 +399,24 @@ select {
         display: none;
     }
 
+    #navLeft {
+        margin-left: 3vw;
+    }
+
     #navRight select {
         margin-right: 3vw;
     }
 
     .citationInfo {
         margin-left: 3.5vw;
+    }
+
+    .container {
+        width: 28vw;
+    }
+
+    .container img {
+        width: 28vw;
     }
 }
 

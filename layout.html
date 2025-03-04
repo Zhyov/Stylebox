@@ -9,11 +9,11 @@
     <title>layout</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="Overview">
     <div id="navbar">
         <div id="navLeft">
-            <img src="img/logo.png" alt="logo" id="logo">
-            <img src="icon/search.png" alt="search" id="searchIcon">
+            <img src="img/logo.svg" alt="logo" id="logo">
+            <img src="icon/search.svg" alt="search" id="searchIcon">
             <input type="text" placeholder="Learn about anything you can imagine..." id="search">
         </div>
         <div id="navRight">
@@ -25,68 +25,33 @@
             </select>
         </div>
     </div>
-    <div id="bottom">&nbsp;</div>
     <div id="page">
         <div id="leftContent">
-            <p class="title3 leftContentTitle">Contents</p>
-            <div id="sideTitles">
-                <div class="title">
-                    <div class="side active">&nbsp;</div>
-                    <div class="info active">Overview</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Designing</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">History of design</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Design education</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Design process</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Rational model</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Action-centric model</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Philosophies</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">Relationship with the arts</div>
-                </div>
-                <div class="title">
-                    <div class="side">&nbsp;</div>
-                    <div class="info">References</div>
-                </div>
+            <p class="title3 sidebarTitle">Contents</p>
+            <div id="sidebarTitles">
+                <a href="#Overview" class="title">Overview</a>
+                <a href="#Designing" class="title">Designing</a>
+                <a href="#History of design" class="title">History of design</a>
+                <a href="#Rational model" class="title">Rational model</a>
+                <a href="#Action-centric model" class="title">Action-centric model</a>
+                <a href="#Philosophies" class="title">Philosophies</a>
+                <a href="#References" class="title">References</a>
             </div>
         </div>
         <div id="mainContent">
             <div class="contentTitle header">
-                <div id="rightContentTitle">
+                <div class="rightContentTitle">
                     <p class="title1 old">Design</p>
                     <p class="small">From Stylebox, the open-source wiki-orientated markup language</p>
                 </div>
-                <div id="leftContentTitle">
+                <div class="leftContentTitle">
+                    <a href="#" class="option"><img src="icon/history.svg" alt="history" class="icon"> Edit History</a>
+                    <a href="#" class="option"><img src="icon/edit.svg" alt="edit" class="icon"> Edit</a>
                 </div>
             </div>
             <div id="warning">
-                <div class="side">&nbsp;</div>
-                <div class="info">
-                    <p class="title4 bold">This article possibly contains original research.</p>
-                    <p class="small">Please <a href="#">improve it</a> by <a href="#">verifying</a> the claims made and adding <a href="#">inline citations</a>. Statements consisting only of original research should be removed.</p>
-                </div>
+                <p class="title4 bold">This article possibly contains original research.</p>
+                <p class="small">Please <a href="#">improve it</a> by <a href="#">verifying</a> the claims made and adding <a href="#">inline citations</a>. Statements consisting only of original research should be removed.</p>
             </div>
             <div class="contentBox">
                 A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process or the result of that plan or specification in the form of a <a href="#">prototype</a>, product, or <a href="#">process</a>. 
@@ -96,7 +61,12 @@
                 Typical examples of designs include <a href="#">architectural</a> and <a href="#">engineering</a> drawings, <a href="#">circuit diagrams</a>, <a href="#">sewing patterns</a> and less tangible artefacts such as <a href="#">business process</a> models.<sup><a href="#">[1]</a></sup>
             </div>
             <div class="contentTitle">
-                <p class="title2 old">Designing</p>
+                <div class="rightContentTitle">
+                    <p class="title2 old" id="Designing">Designing</p>
+                </div>
+                <div class="leftContentTitle">
+                    <a href="#" class="option"><img src="icon/edit.svg" alt="edit" class="icon"> Edit</a>
+                </div>
             </div>
             <div class="contentBox">
                 People who produce designs are called <a href="#">designers</a>. The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a <a href="#">fashion designer</a>, a <a href="#">product designer</a>, a <a href="#">web designer</a>, or an <a href="#">interior designer</a>), but it can also designate others such as architects and engineers (see below: Types of designing). 
@@ -106,14 +76,19 @@
                 Designing is also a widespread activity outside of the professions, done by more people than just those formally recognized as designers. In his influential book The Sciences of the Artificial the interdisciplinary scientist <a href="#">Herbert A. Simon</a> proposed that "Everyone designs who devises courses of action aimed at changing existing situations into preferred ones".<sup><a href="#">[2]</a></sup> And according to the design researcher <a href="#">Nigel Cross</a> "Everyone can – and does – design", and "Design ability is something that everyone has, to some extent, because it is embedded in our brains as a natural cognitive function".<sup><a href="#">[3]</a></sup>
             </div>
             <div class="contentTitle">
-                <p class="title2 old">History of design</p>
-                <p class="small">Related: <a href="#" class="article">Design History</a></p>
+                <div class="rightContentTitle">
+                    <p class="title2 old" id="History of design">History of design</p>
+                    <p class="small">Related: <a href="#" class="article">Design History</a></p>
+                </div>
+                <div class="leftContentTitle">
+                    <a href="#" class="option"><img src="icon/edit.svg" alt="edit" class="icon"> Edit</a>
+                </div>
             </div>
             <div class="contentBox">
                 People who produce designs are called <a href="#">designers</a>. The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a <a href="#">fashion designer</a>, a <a href="#">product designer</a>, a <a href="#">web designer</a>, or an <a href="#">interior designer</a>), but it can also designate others such as architects and engineers (see below: Types of designing). 
             </div>
             <div class="contentTitle">
-                <p class="title3 old">Rational model</p>
+                <p class="title3 old" id="Rational model">Rational model</p>
             </div>
             <div class="contentBox">
                 People who produce designs are called <a href="#">designers</a>. The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a <a href="#">fashion designer</a>, a <a href="#">product designer</a>, a <a href="#">web designer</a>, or an <a href="#">interior designer</a>), but it can also designate others such as architects and engineers (see below: Types of designing). 
@@ -129,13 +104,16 @@
                 </div>
             </div>
             <div class="contentTitle">
-                <p class="title3 old">Action-centric model</p>
+                <p class="title3 old" id="Action-centric model">Action-centric model</p>
             </div>
             <div class="contentBox">
                 People who produce designs are called <a href="#">designers</a>. The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a <a href="#">fashion designer</a>, a <a href="#">product designer</a>, a <a href="#">web designer</a>, or an <a href="#">interior designer</a>), but it can also designate others such as architects and engineers (see below: Types of designing). 
             </div>
             <div class="contentTitle">
-                <p class="title2 old">Philosophies</p>
+                <div class="rightContentTitle">
+                    <p class="title2 old" id="Philosophies">Philosophies</p>
+                </div>
+                <a href="#" class="option"><img src="icon/edit.svg" alt="edit" class="icon"> Edit</a>
             </div>
             <div class="contentBox">
                 People who produce designs are called <a href="#">designers</a>. The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a <a href="#">fashion designer</a>, a <a href="#">product designer</a>, a <a href="#">web designer</a>, or an <a href="#">interior designer</a>), but it can also designate others such as architects and engineers (see below: Types of designing). 
@@ -145,8 +123,10 @@
                 Designing is also a widespread activity outside of the professions, done by more people than just those formally recognized as designers. In his influential book The Sciences of the Artificial the interdisciplinary scientist <a href="#">Herbert A. Simon</a> proposed that "Everyone designs who devises courses of action aimed at changing existing situations into preferred ones".<sup><a href="#">[2]</a></sup> And according to the design researcher <a href="#">Nigel Cross</a> "Everyone can – and does – design", and "Design ability is something that everyone has, to some extent, because it is embedded in our brains as a natural cognitive function".<sup><a href="#">[3]</a></sup>
             </div>
             <div class="contentTitle">
-                <p class="title2 old">References & citations</p>
-                <p class="info">This section is generated automatically from footnotes in the article body.</p>
+                <div class="rightContentTitle">
+                    <p class="title2 old" id="References">References & citations</p>
+                    <p class="info">This section is generated automatically from footnotes in the article body.</p>
+                </div>
             </div>
             <div class="contentBox">
                 <div class="citation">
@@ -176,12 +156,16 @@
             </div>
         </div>
         <div id="rightContent">
-            <img src="https://s3-alpha-sig.figma.com/img/9c5f/c785/82a9b91d788c95dc4beb93067f8e1d7f?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KLh3LhZtiqekRkbhwjhZb1K4mgZI5eLqLMqwQk8mGSAvVxY0nwDK~g1yw1H3DwtNNUcxpOhHGgIFpOmDMKzcAjJEnsDl97UFwNMPZpTtQJJaYbrb2P~rVOAKp~lWEPx7yZB6suEGVXVzNr1YDFHqilNY3nweDU1q~zSmUTgnfNy-nOEu0slIRjrOC4ddb~BayE1qlZEaZAJ16ocWbRzYZanj9ZcXSkCcR0XEAl-TAEp1bL5CDuXYDQjyn84bC08igeDwZFeLfKSLeZnOUZpc2-hwvBiDNyusgNVOEvuQIZKgHarcexo21I6rGQN1bxKkwz6w7pN1Mhvw4TCXNyhc8w__" alt="placeholder" class="rightContentImage">
-            <p class="info"><a href="#">Cutlery</a> designed by architect and designer <a href="#">Zaha Hadid</a> (2007). The slightly oblique end part of the fork and the spoons, as well as the knife handle, are examples of designing for both aesthetic form and practical function.</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <img src="https://s3-alpha-sig.figma.com/img/cd6f/9170/dcdda4f14e84b34af51f7513d2d130b1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UoKG0mPJEXAJXRzUqPSnxXswQ1s9~Uzhjk9iwJGzpZYdTFb~O05yt75xXQLv3UpEkIu3OX6W5McvWjpkL1seEgtVxGLwz7jWyKlNOmc3~W3tv9LAMyCuz6yhoDFEM8v-ABNYuWVLFgno-bkLffajqDvRUZhE4bI7oomcNDENAMcmXPSR7VRyKeDORytct3JEcQSTgkRzKITDpRv8uHm08mjoa1fNt1a2R-RHA1yHCG99BfDvnMrU1ruR8lcrtwoxSTvbx9CetPwJaSHsBn22DYqJuQQfsrvpHFPdunYnzvoSLg8WYrmVedKTfBf1yFb4kbBakUEOMmdVVp6Uk-3Pmw__" alt="placeholder" class="rightContentImage">
-            <p class="info">Wireframe render of a complex 3D model representing a bathing robe.</p>
+            <div class="container" id="image1">
+                <img src="https://s3-alpha-sig.figma.com/img/9c5f/c785/82a9b91d788c95dc4beb93067f8e1d7f?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KLh3LhZtiqekRkbhwjhZb1K4mgZI5eLqLMqwQk8mGSAvVxY0nwDK~g1yw1H3DwtNNUcxpOhHGgIFpOmDMKzcAjJEnsDl97UFwNMPZpTtQJJaYbrb2P~rVOAKp~lWEPx7yZB6suEGVXVzNr1YDFHqilNY3nweDU1q~zSmUTgnfNy-nOEu0slIRjrOC4ddb~BayE1qlZEaZAJ16ocWbRzYZanj9ZcXSkCcR0XEAl-TAEp1bL5CDuXYDQjyn84bC08igeDwZFeLfKSLeZnOUZpc2-hwvBiDNyusgNVOEvuQIZKgHarcexo21I6rGQN1bxKkwz6w7pN1Mhvw4TCXNyhc8w__" alt="placeholder1">
+                <p class="info"><a href="#">Cutlery</a> designed by architect and designer <a href="#">Zaha Hadid</a> (2007). The slightly oblique end part of the fork and the spoons, as well as the knife handle, are examples of designing for both aesthetic form and practical function.</p>
+            </div>
+            <div class="container" id="image2">
+                <img src="https://s3-alpha-sig.figma.com/img/cd6f/9170/dcdda4f14e84b34af51f7513d2d130b1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UoKG0mPJEXAJXRzUqPSnxXswQ1s9~Uzhjk9iwJGzpZYdTFb~O05yt75xXQLv3UpEkIu3OX6W5McvWjpkL1seEgtVxGLwz7jWyKlNOmc3~W3tv9LAMyCuz6yhoDFEM8v-ABNYuWVLFgno-bkLffajqDvRUZhE4bI7oomcNDENAMcmXPSR7VRyKeDORytct3JEcQSTgkRzKITDpRv8uHm08mjoa1fNt1a2R-RHA1yHCG99BfDvnMrU1ruR8lcrtwoxSTvbx9CetPwJaSHsBn22DYqJuQQfsrvpHFPdunYnzvoSLg8WYrmVedKTfBf1yFb4kbBakUEOMmdVVp6Uk-3Pmw__" alt="placeholder2">
+                <p class="info">Wireframe render of a complex 3D model representing a bathing robe.</p>
+            </div>
         </div>
     </div>
+<script src="layout.js"></script>
 </body>
 </html>
