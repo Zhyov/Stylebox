@@ -1,4 +1,4 @@
-# <img src="img/logo.svg" alt="Logo" width="20"/> Stylebox
+# <img src="public/assets/logo.svg" alt="Logo" width="20"/> Stylebox
 A wiki-orientated markup language made in JavaScript.
 
 Click [here](https://zhyov.github.io/Stylebox/layout.html) for a preview of the UI.
