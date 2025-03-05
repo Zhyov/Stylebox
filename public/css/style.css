@@ -73,14 +73,15 @@ body {
 
 #navRight a {
     text-decoration: none;
-    margin-top: 2.5ch;
+    margin-top: 2h;
     margin-left: 0.5vw;
-    padding: 1ch 0.5vw;
+    padding: 1.33ch 0.5vw;
     color: #121212;
 }
 
 #navRight select {
-    margin-top: 2ch;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 1.33ch;
     outline: none;
 }
 
@@ -429,7 +430,6 @@ select {
     background-color: #ffffff;
     border: none;
     font-size: 16px;
-    height: 5ch;
     margin-left: 0.5vw;
     padding: 0 0.5vw;
 }
