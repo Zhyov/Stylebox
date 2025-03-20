@@ -68,12 +68,12 @@ body {
 }
 
 #navRight {
+    margin-top: 3ch !important;
     margin-left: auto;
 }
 
 #navRight a {
     text-decoration: none;
-    margin-top: 2h;
     margin-left: 0.5vw;
     padding: 1.33ch 0.5vw;
     color: #121212;
