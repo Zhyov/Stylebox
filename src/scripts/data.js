@@ -4,7 +4,43 @@ export default [
         type: "name",
         info: {
             title: "Design",
-            content: []
+
+            content: [
+                {
+                    type: "warning",
+                    title: "This article possibly contains original research.", 
+                    content: [
+                        {
+                            type: "text",
+                            text: "Please ",
+                            break: false
+                        },
+                        {
+                            type: "link",
+                            text: "improve it",
+                            link: "#",
+                            break: false
+                        },
+                        {
+                            type: "text",
+                            text: " by ",
+                            break: false
+                        },
+                        {
+                            type: "link",
+                            text: "veryfing",
+                            link: "#",
+                            break: false
+                        },
+                        {
+                            type: "text",
+                            text: " the claims made and added ",
+                            break: false
+                        },
+                    ],
+                    break: true
+                },
+            ]
         }
     },
     {
@@ -34,8 +70,9 @@ export default [
             title: "History of design",
             content: [
                 {
-                    type: "content",
+                    type: "text",
                     text: "",
+                    break: false
                 }
             ]
         }
@@ -47,8 +84,9 @@ export default [
             title: "Rational model",
             content: [
                 {
-                    type: "content",
+                    type: "text",
                     text: "",
+                    break: false
                 }
             ]
         }
@@ -60,8 +98,9 @@ export default [
             title: "Action-centric model",
             content: [
                 {
-                    type: "content",
+                    type: "text",
                     text: "",
+                    break: false
                 }
             ]
         }
@@ -73,8 +112,9 @@ export default [
             title: "Philosophies",
             content: [
                 {
-                    type: "content",
+                    type: "text",
                     text: "",
+                    break: false
                 }
             ]
         }
@@ -86,8 +126,9 @@ export default [
             title: "References",
             content: [
                 {
-                    type: "content",
+                    type: "text",
                     text: "",
+                    break: false
                 }
             ]
         }
