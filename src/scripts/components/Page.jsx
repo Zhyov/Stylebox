@@ -4,11 +4,11 @@ import data from "/src/scripts/data"
 
 export default function Page() {
     const sidebarTitles = data.map(element => {
-        return (element.type.includes("title") && <SidebarTitle key={element.id} name={element.content.title} />)
+        return ((element.type.includes("title") || element.type === "references" ) && <SidebarTitle key={element.id} name={element.content.title} />)
     })
 
     const content = data.map(element => {
-        return ((element.type.includes("title") || element.type === "name") && <ContentTitle key={element.id} name={element.content.title} type={element.type} content={element.content.content} />)
+        return ((element.type.includes("title") || element.type === "name" || element.type === "references") && <ContentTitle key={element.id} name={element.content.title} type={element.type} content={element.content.content} />)
     })
 
     return (

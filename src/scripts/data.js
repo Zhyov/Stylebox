@@ -186,8 +186,7 @@ export default [
                             type: "text",
                             text: "."
                         }
-                    ],
-                    break: true
+                    ]
                 },
             ]
         }
@@ -201,8 +200,179 @@ export default [
                 {
                     id: crypto.randomUUID(),
                     type: "text",
-                    text: "I exist"
-                }
+                    text: "People who produce designs are called "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "designers",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ". The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "fashion designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ", a "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "product designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ", a "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "web designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ", or an "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "interior designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: "), but it can also designate others such as architects and engineers (see below: Types of designing).",
+                    break: true
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: "A designer's sequence of activities to produce a design is called a design process, using "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "design thinking",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: " and possibly "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "design methods",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ". The process of creating a design can be brief (a quick sketch) or lengthy and complicated, involving considerable research, negotiation, reflection, "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "modeling",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: " , interactive adjustment, and re-design.",
+                    break: true
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: "Designing is also a widespread activity outside of the professions, done by more people than just those formally recognized as designers. In his influential book The Sciences of the Artificial the interdisciplinary scientist "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "Herbert A. Simon",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: " proposed that \"Everyone designs who devises courses of action aimed at changing existing situations into preferred ones\"."
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "citation",
+                    content: [
+                        {
+                            id: crypto.randomUUID(),
+                            type: "text",
+                            text: "Simon, Herbert A. (1969). "
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "link",
+                            text: "The Sciences of the Artificial",
+                            link: "#"
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "  (first ed.). Cambridge, Massachusetts: M.I.T. Press. p. 54.",
+                            text: "."
+                        }
+                    ]
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: " And according to the design researcher "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "Nigel Cross",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: " \"Everyone can – and does – design\", and \"Design ability is something that everyone has, to some extent, because it is embedded in our brains as a natural cognitive function\"."
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "citation",
+                    content: [
+                        {
+                            id: crypto.randomUUID(),
+                            type: "text",
+                            text: "This principle was previously expressed on this policy page as \"the threshold for inclusion is verifiability, not truth\". See the essay, "
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "link",
+                            text: "Wikipedia:Verifiability, not truth",
+                            link: "#"
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "text",
+                            text: "."
+                        }
+                    ]
+                },
             ]
         }
     },
@@ -215,8 +385,143 @@ export default [
                 {
                     id: crypto.randomUUID(),
                     type: "text",
-                    text: "I exist"
-                }
+                    text: "People who produce designs are called "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "designers",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ". The term 'designer' generally refers to someone who works professionally in one of the various design areas. Within the professions, the word 'designer' is generally qualified by the area of practice (so one may be, for example, a "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "fashion designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ", a "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "product designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ", a "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "web designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: ", or an "
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "link",
+                    text: "interior designer",
+                    link: "#"
+                },
+                {
+                    id: crypto.randomUUID(),
+                    type: "text",
+                    text: "), but it can also designate others such as architects and engineers (see below: Types of designing)."
+                },
+                {   
+                    id: crypto.randomUUID(),
+                    type: "callout",
+                    title: "Criticism of the rational model", 
+                    content: [
+                        {
+                            id: crypto.randomUUID(),
+                            type: "text",
+                            text: "The rational model has been widely criticized on two primary grounds. First, designers do not work this way – extensive empirical evidence has demonstrated that designers do not act as the rational model suggests."
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "citation",
+                            content: [
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "text",
+                                    text: "Simon, Herbert A. (1969). "
+                                },
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "link",
+                                    text: "The Sciences of the Artificial",
+                                    link: "#"
+                                },
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "  (first ed.). Cambridge, Massachusetts: M.I.T. Press. p. 54.",
+                                    text: "."
+                                }
+                            ]
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "citation",
+                            content: [
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "text",
+                                    text: "This principle was previously expressed on this policy page as \"the threshold for inclusion is verifiability, not truth\". See the essay, "
+                                },
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "link",
+                                    text: "Wikipedia:Verifiability, not truth",
+                                    link: "#"
+                                },
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "text",
+                                    text: "."
+                                }
+                            ]
+                        },
+                        {
+                            id: crypto.randomUUID(),
+                            type: "citation",
+                            content: [
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "text",
+                                    text: "Simon, Herbert A. (1969). "
+                                },
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "link",
+                                    text: "The Sciences of the Artificial",
+                                    link: "#"
+                                },
+                                {
+                                    id: crypto.randomUUID(),
+                                    type: "  (first ed.). Cambridge, Massachusetts: M.I.T. Press. p. 54.",
+                                    text: "."
+                                }
+                            ],
+                            break: true
+                        },
+                        
+                    ]
+                },
             ]
         }
     },
@@ -264,14 +569,14 @@ export default [
     },
     {
         id: crypto.randomUUID(),
-        type: "title2",
+        type: "references",
         content: {
             title: "References",
             content: [
                 {
                     id: crypto.randomUUID(),
                     type: "text",
-                    text: ""
+                    text: "I don't work (yet)"
                 }
             ]
         }
