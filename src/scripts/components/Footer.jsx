@@ -9,7 +9,7 @@ export default function Footer() {
                 </div>
             </div>
             <div id="rightFooter">
-                <a href="https://github.com/Zhyov/Stylebox"><img src="/assets/stylebox/powered.svg" id="powered" /></a>
+                <a href="https://github.com/Zhyov/Stylebox"><img src="./assets/stylebox/powered.svg" id="powered" /></a>
             </div>
         </footer>
     )
