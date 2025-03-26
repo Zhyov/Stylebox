@@ -1,4 +1,4 @@
-# <img src="/src/assets/stylebox/logo.svg" alt="Logo" width="20"/> Stylebox
+# <img src="/public/assets/stylebox/logo.svg" alt="Logo" width="20"/> Stylebox
 A wiki-orientated markup language made in React JS.
 
 Click [here](https://zhyov.github.io/Stylebox/) for a preview of the UI.
