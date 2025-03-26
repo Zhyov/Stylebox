@@ -1,21 +1,11 @@
-import Link from "./Link"
+import Text from "./Text"
 
 export default function Callout({content, title}) {
-    const contentElements = content.map(element => {
-        return (
-            <>
-                {element.type === "text" && element.text }
-                {element.type === "link" && <Link key={element.id} text={element.text} link={element.link} />}
-                {element.break && <br />}
-            </>
-        )
-    })
-
     return (
-        <div class="callout">
-            <div class="info">
-                <p class="bold">{title}</p>
-                <p class="small">{contentElements}</p>
+        <div className="callout">
+            <div className="info">
+                <p className="bold">{title}</p>
+                <p className="small">{content.map(element => (<Text key={element.id} type={element.type} text={element.text} link={element.link} lbreak={element.break} />))}</p>
             </div>
         </div>
     )

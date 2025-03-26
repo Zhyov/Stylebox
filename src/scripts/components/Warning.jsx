@@ -1,20 +1,10 @@
-import Link from "./Link"
+import Text from "./Text"
 
 export default function Warning({content, title}) {
-     const contentElements = content.map(element => {
-            return (
-                <>
-                    {element.type === "text" && element.text }
-                    {element.type === "link" && <Link key={element.id} text={element.text} link={element.link} />}
-                    {element.break && <br />}
-                </>
-            )
-        })
-
     return (
         <div id="warning">
-            <p class="title4 bold">{title}</p>
-            <p class="small">{contentElements}</p>
+            <p className="title4 bold">{title}</p>
+            <p className="small">{content.map(element => (<Text key={element.id} type={element.type} text={element.text} link={element.link} lbreak={element.break} />))}</p>
         </div>
     )
 }
