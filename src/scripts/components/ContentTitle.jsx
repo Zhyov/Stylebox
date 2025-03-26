@@ -16,8 +16,8 @@ export default function ContentTitle({name, type, content}) {
                 <div className="leftContentTitle">
                     {titleNumber < 3 &&
                         <>
-                            <a href="#" className="option"><img src="/src/assets/stylebox/history.svg" alt="history" className="icon" /> Edit History</a>
-                            <a href="#" className="option"><img src="/src/assets/stylebox/edit.svg" alt="edit" className="icon" /> Edit</a>
+                            <a href="#" className="option"><img src="/assets/stylebox/history.svg" alt="history" className="icon" /> Edit History</a>
+                            <a href="#" className="option"><img src="/assets/stylebox/edit.svg" alt="edit" className="icon" /> Edit</a>
                         </>
                     }
                 </div>
