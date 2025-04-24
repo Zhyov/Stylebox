@@ -1,9 +1,10 @@
-import { incrementCitationCounter, getCitationCount } from "./citationCounter"
+import { incrementCitationCounter, getCitationCount, newCitation } from "./citationCounter"
 
-export default function Citation() {
+export default function Citation({content}) {
     incrementCitationCounter()
+    newCitation(getCitationCount(), content)
 
     return (
-        <sup><a href={`#citation${getCitationCount()}`}>[{getCitationCount()}]</a></sup>
+        <sup><a id={`citationReference${getCitationCount()}`} href={`#citation${getCitationCount()}`} className="text-link underline">[{getCitationCount()}]</a></sup>
     )
 }

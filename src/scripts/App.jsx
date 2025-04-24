@@ -6,7 +6,7 @@ import Footer from "./components/Footer"
 export default function App() {
     return (
         <>
-            <Enlarge />
+            { /* <Enlarge /> */ }
             <Navbar />
             <Page />
             <Footer />

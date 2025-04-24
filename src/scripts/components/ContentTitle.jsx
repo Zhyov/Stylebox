@@ -10,21 +10,37 @@ export default function ContentTitle({name, type, content}) {
 
     return (
         <>
-            <div className={`contentTitle ${type === "name" ? "header" : ""}`}>
-                <div className="rightContentTitle">
-                    <p className={`title${type === "references" ? 2 : titleNumber} old`} id={name}>{name}</p>
-                    {titleNumber === 4 && <p className="info">This section is generated automatically from footnotes in the article body.</p>}
+            <div className={`flex flex-row flex-nonwrap justify-between ${titleNumber === 1 ? "mt-5 mb-10" : "mt-10 mb-5"}`}>
+                <div>
+                    <h1 className={`font-old ${
+                        titleNumber === 1
+                        ? "text-[48px]"
+                        : (titleNumber === 2 || type === "references" )
+                        ? "text-[24px]"
+                        : titleNumber === 3
+                        ? "text-[20px]"
+                        : "text-[18px]"
+                    } ${
+                        (titleNumber === 1 || titleNumber === 2)
+                        ? "font-[650]"
+                        : "font-semibold"
+                    }`} id={name}>{type === "references" ? "References & citations" : name}</h1>
+                    {titleNumber === 1 && <p className="text-[14px]">{content.description}</p>}
+                    {titleNumber === 4 && <p className="text-[14px] italic text-neutral-500">This section is generated automatically from footnotes in the article body.</p>}
                 </div>
-                <div className="leftContentTitle">
+                <div className="hidden md:flex flex-row flex-nowrap justify-end items-center align-middle gap-6">
                     {titleNumber < 3 &&
                         <>
-                            <a href="#" className="option"><img src="./assets/stylebox/history.svg" alt="history" className="icon" /> Edit History</a>
-                            <a href="#" className="option"><img src="./assets/stylebox/edit.svg" alt="edit" className="icon" /> Edit</a>
+                            {
+                                titleNumber === 1
+                                && <a href="#" className="flex flex-row flex-nowrap items-center gap-2 text-link"><img src="./assets/stylebox/history.svg" alt="history" className="size-4" /> Edit History</a>
+                            }
+                            <a href="#" className="flex flex-row flex-nowrap items-center gap-2 text-link"><img src="./assets/stylebox/edit.svg" alt="edit" className="size-4" /> Edit</a>
                         </>
                     }
                 </div>
             </div>
-            <ContentBox content={content} number={titleNumber}/>
+            <ContentBox content={content.content} number={titleNumber} ptype={type} />
         </>
     )
 }
